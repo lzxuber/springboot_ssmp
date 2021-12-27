@@ -1,0 +1,41 @@
+
+String StringBuffer StringBuilder
+
+StringBuffer 适用于用在多线程操作同一个 StringBuffer 的场景，如果是单线程场合 StringBuilder 更适合。
+StringBuilder是非线程安全的， 这也是速度比StringBuffer快的原因
+
+1.io流原理
+input,输入input：读取外部数据，如磁盘，光盘等存储设备的数据到程序（内存）中。
+
+output,输出output:将内存的数据输出到硬盘，磁盘，光盘等存储设备中。
+
+2.流的分类
+按操作数据单位不同划分：字节流（8bit）(按字节，单位比字符小。2进制，保证文件的无损操作)，字符流（按字符，文本）
+没办法说一个字符=XX字节
+
+
+按数据的流向不同分为：输入流，输出流
+按流的角色不用分为：节点流、处理流、包装流
+
+抽象基类    字节流     字符流
+输入流     inputstream   reader
+输出流     outputstream  writer
+
+都是抽象类，使用是去使用他们的子类
+inputstream
+outputstream
+reader
+writer
+
+inputstream的子类：
+fileinputstream:文件输入流
+bufferedinputstream:缓冲字节输入流
+objectinputstream:对象字节输入流
+
+
+
+
+
+
+
+
